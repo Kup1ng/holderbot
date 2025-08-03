@@ -1,8 +1,9 @@
 # HolderBot  
 
-A powerful Telegram bot for managing multiple VPN panels with advanced features and ease of use.
-
-![holderbotcover](https://github.com/user-attachments/assets/b660f9cb-0541-4c03-9660-2b5f2cb9e6e2)
+<div align="center"><a href="https://github.com/Kup1ng/holderbot">
+  <img src="https://github.com/user-attachments/assets/b660f9cb-0541-4c03-9660-2b5f2cb9e6e2" width="200" alt="Image Description">
+</a>
+</div>
 
 ---
 
