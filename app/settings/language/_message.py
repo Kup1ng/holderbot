@@ -7,9 +7,7 @@ class _MessageSettings(BaseSettings):
         env_file=".env", case_sensitive=True, extra="ignore"
     )
 
-    START: str = (
-        "Welcome to HolderBot 🤖"
-    )
+    START: str = "Welcome to HolderBot 🤖"
     LETS_BACK: str = "Let's back..."
     ITEMS_MENU: str = "Select a item or create a new:"
     ITEMS: str = "Select items"
