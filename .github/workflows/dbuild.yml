@@ -35,5 +35,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            Kup1ng/holderbot:dev
-            Kup1ng/holderbot:${{ github.sha }}
+            kup1ng/holderbot:dev
+            kup1ng/holderbot:${{ github.sha }}
