@@ -2,7 +2,7 @@
 
 A powerful Telegram bot for managing multiple VPN panels with advanced features and ease of use.
 
-![holderbotcover](https://github.com/user-attachments/assets/db3b5da5-3e22-4436-9502-ed478415f908)
+![holderbotcover](https://github.com/user-attachments/assets/b660f9cb-0541-4c03-9660-2b5f2cb9e6e2)
 
 ---
 
