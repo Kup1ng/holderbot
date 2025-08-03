@@ -1,6 +1,6 @@
 services:
   holderbot:
-    image: Kup1ng/holderbot:latest
+    image: kup1ng/holderbot:latest
     restart: always
     env_file:
       - .env
