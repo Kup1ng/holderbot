@@ -38,7 +38,7 @@ curl -fsSL https://get.docker.com | sh
 mkdir -p /opt/holderbot/data
 curl -o /opt/holderbot/docker-compose.yml https://raw.githubusercontent.com/Kup1ng/holderbot/master/docker-compose.yml
 cd /opt/holderbot
-curl -o .env https://raw.githubusercontent.com/holderbot/master/.env.example
+curl -o .env https://raw.githubusercontent.com/Kup1ng/holderbot/master/.env.example
 nano .env
 ```
 
