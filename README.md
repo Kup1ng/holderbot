@@ -36,7 +36,7 @@ curl -fsSL https://get.docker.com | sh
 #### 1. Create Directory and Download Files  
 ```bash
 mkdir -p /opt/holderbot/data
-curl -o /opt/holderbot/docker-compose.yml https://raw.githubusercontent.com/erfjab/holderbot/master/docker-compose.yml
+curl -o /opt/holderbot/docker-compose.yml https://raw.githubusercontent.com/Kup1ng/holderbot/master/docker-compose.yml
 cd /opt/holderbot
 curl -o .env https://raw.githubusercontent.com/holderbot/master/.env.example
 nano .env
