@@ -20,12 +20,7 @@
 <details>
 <summary>Show Server Commands</summary>
 
-#### 1. Update the Server  
-```bash
-sudo apt update && sudo apt upgrade -y
-```
-
-#### 2. Install Docker  
+#### Install Docker  
 ```bash
 curl -fsSL https://get.docker.com | sh
 ```
