@@ -34,14 +34,14 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            erfjab/holderbot:pr-${{ github.event.pull_request.number }}
+            Kup1ng/holderbot:pr-${{ github.event.pull_request.number }}
 
       - name: Print Success Message
         if: success()
         run: |
           echo "✅ Docker Image built successfully!"
           echo "You can test it using the following command:"
-          echo "docker run -it --rm erfjab/holderbot:pr-${{ github.event.pull_request.number }}"
+          echo "docker run -it --rm Kup1ng/holderbot:pr-${{ github.event.pull_request.number }}"
 
       - name: Print Failure Message
         if: failure()
