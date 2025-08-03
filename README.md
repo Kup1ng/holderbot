@@ -148,12 +148,3 @@ cd /opt/erfjab/holderbot
   ```
 </details>
 
----
-
-## **Support**  
-
-- **Telegram Channel:** [@ErfJabs](https://t.me/ErfJabs)  
-- **Telegram Group:** [@ErfJabGroup](https://t.me/erfjabgroup)  
-
-⭐ **Star the Project:**  
-[![Stargazers](https://starchart.cc/erfjab/holderbot.svg?variant=adaptive)](https://starchart.cc/erfjab/holderbot)  
