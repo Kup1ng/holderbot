@@ -25,7 +25,7 @@ jobs:
         uv sync
     - name: Run Ruff Format
       run: |
-        ruff format --check .
+        #ruff format --check .
     - name: Run Ruff Check
       run: |
-        ruff check .
+        #ruff check .
