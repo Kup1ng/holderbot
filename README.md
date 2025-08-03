@@ -40,10 +40,10 @@ curl -fsSL https://get.docker.com | sh
 
 #### 1. Create Directory and Download Files  
 ```bash
-mkdir -p /opt/erfjab/holderbot/data
-curl -o /opt/erfjab/holderbot/docker-compose.yml https://raw.githubusercontent.com/erfjab/holderbot/master/docker-compose.yml
-cd /opt/erfjab/holderbot
-curl -o .env https://raw.githubusercontent.com/erfjab/holderbot/master/.env.example
+mkdir -p /opt/holderbot/data
+curl -o /opt/holderbot/docker-compose.yml https://raw.githubusercontent.com/erfjab/holderbot/master/docker-compose.yml
+cd /opt/holderbot
+curl -o .env https://raw.githubusercontent.com/holderbot/master/.env.example
 nano .env
 ```
 
@@ -70,7 +70,7 @@ After a few moments, the bot will start running.
 
 Make sure you're in the **HolderBot** directory:  
 ```bash
-cd /opt/erfjab/holderbot
+cd /opt/holderbot
 ```
 
 Then update the bot:  
@@ -89,7 +89,7 @@ docker compose pull && docker compose up -d
 
 Make sure you're in the **HolderBot** directory:  
 ```bash
-cd /opt/erfjab/holderbot
+cd /opt/holderbot
 ```
 
 - **Restart the Bot:**  
@@ -118,7 +118,7 @@ cd /opt/erfjab/holderbot
 
 Make sure you're in the **HolderBot** directory:  
 ```bash
-cd /opt/erfjab/holderbot
+cd /opt/holderbot
 ```
 
 - **Open the Docker Compose File:**  
@@ -130,11 +130,11 @@ cd /opt/erfjab/holderbot
   
   **From:**  
   ```yaml
-  erfjab/holderbot:latest
+  Kup1ng/holderbot:latest
   ```
   **To:**  
   ```yaml
-  erfjab/holderbot:ga
+  Kup1ng/holderbot:ga
   ```
 
 - **Pull the Docker Image:**  
