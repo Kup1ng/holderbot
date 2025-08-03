@@ -106,10 +106,10 @@ cd /opt/holderbot
 
 ---
 
-### **Switch to GA Mode (preview mode)**  
+### **Switch to DEV Mode (preview mode)**  
 
 <details>
-<summary>Show GA Commands</summary>
+<summary>Show DEV Commands</summary>
 
 Make sure you're in the **HolderBot** directory:  
 ```bash
@@ -129,7 +129,7 @@ cd /opt/holderbot
   ```
   **To:**  
   ```yaml
-  Kup1ng/holderbot:ga
+  Kup1ng/holderbot:dev
   ```
 
 - **Pull the Docker Image:**  
