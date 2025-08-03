@@ -34,5 +34,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            erfjab/holderbot:latest
-            erfjab/holderbot:${{ github.sha }}
+            Kup1ng/holderbot:latest
+            Kup1ng/holderbot:${{ github.sha }}
