@@ -8,7 +8,7 @@ class _MessageSettings(BaseSettings):
     )
 
     START: str = (
-        f"Welcome to HolderBot 🤖"
+        "Welcome to HolderBot 🤖"
     )
     LETS_BACK: str = "Let's back..."
     ITEMS_MENU: str = "Select a item or create a new:"
