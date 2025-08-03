@@ -6,10 +6,8 @@ class _MessageSettings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file=".env", case_sensitive=True, extra="ignore"
     )
-
     START: str = (
-        f"Welcome to HolderBot 🤖 [<code>{__version__}</code> by @ErfJabs]\n"
-        "<b><a href='https://t.me/pingihostbot'>نصب پنل و انجام تانل به صورت کامل خودکار!</a></b>"
+        f"Welcome to HolderBot 🤖 [<code>{*version*}</code> by @ErfJabs]"
     )
     LETS_BACK: str = "Let's back..."
     ITEMS_MENU: str = "Select a item or create a new:"
