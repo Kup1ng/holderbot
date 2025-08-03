@@ -6,7 +6,7 @@ class _MessageSettings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file=".env", case_sensitive=True, extra="ignore"
     )
-    START: str = f"Welcome to HolderBot 🤖 (v{version})"
+    START: str = "Welcome to HolderBot 🤖"
     LETS_BACK: str = "Let's back..."
     ITEMS_MENU: str = "Select a item or create a new:"
     ITEMS: str = "Select items"
