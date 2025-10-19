@@ -7,16 +7,16 @@ from app.api.helpers import format_bytes, format_date_diff, ensure_utc
 
 class UserDataUsageResetStrategy(str, Enum):
     no_reset = "no_reset"
-    day = "day"
-    week = "week"
-    month = "month"
-    year = "year"
+    day = "روز"
+    week = "هفته"
+    month = "ماه"
+    year = "سال"
 
 
 class UserExpireStrategy(str, Enum):
-    NEVER = "never"
+    NEVER = "بدون محدودیت زمان"
     FIXED_DATE = "fixed_date"
-    START_ON_FIRST_USE = "start_on_first_use"
+    START_ON_FIRST_USE = "پس از اولین استفاده"
 
 
 class MarzneshinUserResponse(BaseModel):
