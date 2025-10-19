@@ -13,9 +13,9 @@ class MarzbanUserStatus(str, Enum):
 
 
 class MarzneshinUserExpireStrategy(str, Enum):
-    NEVER = "بدون محدودیت زمان"
+    NEVER = "never"
     FIXED_DATE = "fixed_date"
-    START_ON_FIRST_USE = "پس از اولین استفاده"
+    START_ON_FIRST_USE = "start_on_first_use"
 
 
 class DateTypes(str, Enum):
