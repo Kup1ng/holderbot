@@ -46,7 +46,7 @@ async def remark(message: Message, state: FSMContext):
     await state.update_data(types=ServerTypes.MARZNESHIN.value)
     await state.set_state(ServerCreateForm.SUDO)
     track = await message.answer(
-        "آیا ادمین sudo است؟", reply_markup=BotKeys.yes_no()
+        "Is Sudo ?", reply_markup=BotKeys.yes_no()
     )
     return await tracker.cleardelete(message, track)
 
