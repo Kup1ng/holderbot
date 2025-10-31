@@ -339,7 +339,12 @@ async def templateselect(
 
 @router.message(StateFilter(UserCreateForm.DATA_LIMIT))
 async def datalimit(message: Message, state: FSMContext):
-    if not message.text.isdigit():
+    try:
+        # پذیرش اعداد اعشاری و صحیح
+        float_value = float(message.text)
+        if float_value < 0:
+            raise ValueError("Negative value")
+    except ValueError:
         track = await message.answer(text=MessageTexts.WRONG_INT)
         return await tracker.add(track)
 
@@ -521,7 +526,7 @@ async def createusers(
             user_data = user_create_data(
                 server.types,
                 username=user["username"],
-                datalimit=int(user["datalimit"]),
+                datalimit=float(user["datalimit"]),
                 datetype=user["datetypes"],
                 datelimit=int(user["datelimit"]),
                 selects=data["selects"],
@@ -555,7 +560,7 @@ async def createusers(
             user_data = user_create_data(
                 server.types,
                 username=username,
-                datalimit=int(data["datalimit"]),
+                datalimit=float(data["datalimit"]),
                 datetype=data["datetypes"],
                 datelimit=int(data["datelimit"]),
                 selects=data["selects"],
