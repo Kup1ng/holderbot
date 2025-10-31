@@ -72,7 +72,7 @@ def _get_proxies_and_inbounds(configs: dict | None = None):
 def user_create_data(
     types: ServerTypes,
     username: str,
-    datalimit: int,
+    datalimit: float,
     datetype: str,
     datelimit: int,
     selects: dict,
@@ -80,11 +80,11 @@ def user_create_data(
     expire_strategy = _get_expire_strategy(types, datetype)
     expire_date = _get_expire_date(expire_strategy, datelimit)
     usage_duration = _get_usage_duration(expire_strategy, datelimit)
-    datalimit = int(datalimit)
+    datalimit = float(datalimit)
     if types == ServerTypes.MARZNESHIN.value:
         data = MarzneshinUserCreate(
             username=username,
-            data_limit=datalimit * (1024**3) if datalimit != 0 else 0,
+            data_limit=int(datalimit * (1024**3)) if datalimit != 0 else 0,
             service_ids=[service["id"] for service in selects],
             expire_strategy=expire_strategy,
             expire_date=expire_date,
@@ -94,7 +94,7 @@ def user_create_data(
         proxies, inbounds = _get_proxies_and_inbounds(selects)
         data = MarzbanUserCreate(
             username=username,
-            data_limit=datalimit * (1024**3) if datalimit != 0 else 0,
+            data_limit=int(datalimit * (1024**3)) if datalimit != 0 else 0,
             inbounds=inbounds,
             proxies=proxies,
             status=expire_strategy,
