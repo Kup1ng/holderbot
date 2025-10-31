@@ -68,6 +68,9 @@ def translate_data_limit(text: str) -> str:
     """
     if not text:
         return text
+
+    # Replace TB with ترابایت
+    text = re.sub(r"(\d+(?:\.\d+)?)\s*TB", r"\1 ترابایت", text)
     
     # Replace GB with گیگابایت
     text = re.sub(r"(\d+(?:\.\d+)?)\s*GB", r"\1 گیگابایت", text)
@@ -79,4 +82,5 @@ def translate_data_limit(text: str) -> str:
     if text.lower() == "unlimited":
         return "نامحدود"
     
+
     return text
