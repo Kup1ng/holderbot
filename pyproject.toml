@@ -10,6 +10,7 @@ dependencies = [
     "alembic==1.13.1",
     "apscheduler==3.10.4",
     "httpx==0.27.0",
+    "jdatetime==4.1.1",
     "pillow==10.4.0",
     "pydantic-settings==2.6.1",
     "pydantic==2.8.2",
