@@ -23,11 +23,11 @@ def ensure_utc(dt: Optional[datetime | str]) -> Optional[datetime]:
 
 def format_bytes(bytes: int) -> str:
     """Convert bytes to human readable format"""
-    for unit in ["bytes", "KB", "MB", "GB", "TB"]:
+    for unit in ["بایت", "کیلوبایت", "مگابایت", "گیگابایت", "ترابایت"]:
         if bytes < 1024:
             return f"{bytes:.2f} {unit}"
         bytes /= 1024
-    return f"{bytes:.2f} TB"
+    return f"{bytes:.2f} ترابایت"
 
 
 def format_date_diff(reference_date: datetime, date: Optional[datetime]) -> str:
