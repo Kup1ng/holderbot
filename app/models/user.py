@@ -41,7 +41,7 @@ class UserJsonData(BaseModel):
 
 class MarzneshinUserCreate(BaseModel):
     username: str
-    data_limit: int
+    data_limit: float
     service_ids: list[int]
     expire_strategy: MarzneshinUserExpireStrategy
     expire_date: datetime | None
@@ -50,7 +50,7 @@ class MarzneshinUserCreate(BaseModel):
 
 class MarzbanUserCreate(BaseModel):
     username: str
-    data_limit: int
+    data_limit: float
     inbounds: dict
     proxies: dict
     status: MarzbanUserStatus
