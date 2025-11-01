@@ -9,7 +9,6 @@
 
 ## **Supported Panels**  
 - [x] **Marzneshin**  
-- [x] **Marzban**  
 
 ---
 
